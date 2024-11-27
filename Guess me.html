@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guessing Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        #game, #categorySelection {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: auto;
+            width: 300px;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:disabled {
+            background-color: #6c757d;
+            cursor: not-allowed;
+        }
+        button:hover:enabled {
+            background-color: #218838;
+        }
+        
+          .correct {
+            animation: correctAnimation 1s forwards;
+            color: green;
+            font-weight: bold;
+        }
+        .wrong {
+            animation: wrongAnimation 1s forwards;
+            color: red;
+            font-weight: bold;
+        }
+        #quitButton {
+    background-color: red;
+    color: white; /* White text for better contrast */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding to make the button larger */
+    font-size: 16px; /* Larger font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+#quitButton:hover {
+    background-color: darkred; /* Darker red when hovered */
+}
+
+        @keyframes correctAnimation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        @keyframes wrongAnimation {
+            0% { transform: scale(1); }
+            50% { transform: scale(0.9); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div id="categorySelection">
+        <h2>Select Question Category</h2>
+        <button onclick="selectCategory('Movie')">Movie</button>
+        <button onclick="selectCategory('Anime')">Anime</button>
+        <button onclick="selectCategory('Indian')">Indian</button>
+        <button onclick="selectCategory('Kerala')">Kerala</button>
+        <button onclick="selectCategory('World')">World</button>
+        <button onclick="selectCategory('Malayalam')">Malayalam</button>
+        <button onclick="selectCategory('GK')">GK</button>
+        <button onclick="selectCategory('Series')">Series</button>
+        <button onclick="selectCategory('All in one')">All in one</button>
+        
+
+    </div>
+
+    <div id="game" style="display:none;">
+        <h2>Word Guessing Game</h2>
+        <div id="clue1"></div>
+        <div id="clue2"></div>
+        <div id="extraClue" style="display: none;"></div>
+        <input type="text" id="guess" placeholder="Enter your guess here">
+        <button onclick="checkGuess()">Guess</button>
+        <button id="nextButton" onclick="nextWord()" disabled>Next</button>
+
+        <button id="iDontKnowButton" onclick="iDontKnow()">I Don't Know</button>
+
+        <button onclick="getExtraClue()">Get Extra Clue (10 coins)</button>
+        <button id="quitButton" onclick="quitGame()">Quit</button>
+        <p id="message"></p>
+        <p id="attempts"></p>
+        <p id="score">Score: 0</p>
+        <p id="highScore">High Score: 0</p>
+        <p id="coins">Coins: 0</p>
+    </div>
+<!-- Audio Elements -->
+    <audio id="correctSound" src="correct.mp3"></audio>
+    <audio id="wrongSound" src="wrong.mp3"></audio>
+    <audio id="gameOverSound" src="gameOver.mp3"></audio>
+ <script src="script.js"></script>
+</body>
+</html>
