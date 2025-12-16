@@ -1,9 +1,37 @@
-- 👋 Hi, I’m SanjuSreejith
-- 👀 I’m interested in Game Development,html and in C programming
-- 🌱 I’m currently learning Game Development
-- 📫 How to reach me @sanju_sreejith in Instagram
-- ⚡ Fun fact: I am Basically a Dubbing Artist
-<!---
-SanjuSreejith/SanjuSreejith is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+# 👋 Hi, I'm Sanju Sreejith  
+
+🎮 **Game Developer | Creative Coder | Dubbing Artist**  
+
+I’m passionate about building immersive games and interactive experiences.  
+Currently exploring **Game Development**, while also working with **HTML** and **C programming**.  
+I love blending creativity with technology — whether it’s through code or voice 🎙️  
+
+---
+
+## 👀 Interests
+- Game Development (Unity / Indie Games)
+- Web Development (HTML, CSS)
+- C Programming
+- Interactive & Story-driven experiences
+
+---
+
+## 🌱 Currently Learning
+- Advanced Game Development concepts
+- Performance optimization & game systems
+
+---
+
+## 🎙️ Fun Fact
+I’m also a **Dubbing / Voice Artist** and act for YouTube videos.
+
+---
+
+## 🔗 Connect with Me
+- 📸 Instagram: [@sanju_sreejith](https://www.instagram.com/sanju_sreejith)
+- 🌐 Portfolio Website:  
+  👉 **https://jade-dasik-55c9e6.netlify.app/**
+
+---
+
+⭐ *Check out my repositories and feel free to connect or collaborate!*
